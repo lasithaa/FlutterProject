@@ -112,3 +112,71 @@ class _CricketFirstPageState extends State<CricketFirstPage> {
                   ],
                 ),
               ),
+
+               SizedBox(height: 120.0,),
+              Column(
+                children: [
+                  MaterialButton(
+                    onPressed: _showDatePicker,
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0,),
+                      child: Text("Choose Date",style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      ),
+                    ),
+                    color: Colors.lightBlue,
+                  ),
+                ],
+              )
+            ],
+          ),
+        ),
+    );
+  }
+}
+
+// Define the BookingPage, TodayPage, and ContactPage here
+class BookingPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Booking Page"),
+      ),
+      body: Center(
+        child: Text("Booking Page Content"),
+      ),
+    );
+  }
+}
+
+class TodayPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Today Page"),
+      ),
+      body: Center(
+        child: Text("Today Page Content"),
+      ),
+    );
+  }
+}
+
+class ContactPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Contact Page"),
+      ),
+      body: Center(
+        child: Text("Contact Page Content"),
+      ),
+    );
+  }
+}
